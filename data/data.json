@@ -1,0 +1,96 @@
+{
+  "profiles":[
+    {
+      "id":1,
+      "name":"Samba",
+      "label":"DBA",
+      "company":"Infosys",
+      "education":[
+        {
+          "degree":"B Tech (Computer Science and Engineering)",
+          "institute":"Potti Sri Ramulu Chalavadi Mallikarjuna Rao",
+          "data":["74%","2015-2019"]
+        },
+        {
+          "degree":"Intermediate",
+          "institute":"Narayana",
+          "data":["93%","2013-2015"]
+        },
+        {
+          "degree":"SSC",
+          "institute":"L P C T G V E M H S",
+          "data":["8.8","2013"]
+        }
+      ]
+    },
+    {
+      "id":2,
+      "name":"Sai Harsha",
+      "label":"Front end",
+      "company":"Polaris",
+      "education":[
+        {
+          "degree":"B Tech (Computer Science and Engineering)",
+          "institute":"Potti Sri Ramulu Chalavadi Mallikarjuna Rao",
+          "data":["74%","2015-2019"]
+        },
+        {
+          "degree":"Intermediate",
+          "institute":"Narayana",
+          "data":["93%","2013-2015"]
+        },
+        {
+          "degree":"SSC",
+          "institute":"L P C T G V E M H S",
+          "data":["8.8","2013"]
+        }
+      ]
+    },
+    {
+      "id":3,
+      "name":"Mouni Sameera",
+      "label":"Tech-lead",
+      "company":"CA",
+      "education":[
+        {
+          "degree":"B Tech (Computer Science and Engineering)",
+          "institute":"Potti Sri Ramulu Chalavadi Mallikarjuna Rao",
+          "data":["74%","2015-2019"]
+        },
+        {
+          "degree":"Intermediate",
+          "institute":"Narayana",
+          "data":["93%","2013-2015"]
+        },
+        {
+          "degree":"SSC",
+          "institute":"L P C T G V E M H S",
+          "data":["8.8","2013"]
+        }
+      ]
+    },
+    {
+      "id":4,
+      "name":"pavani Nikitha",
+      "label":"Developer",
+      "company":"IBM",
+      "education":[
+        {
+          "degree":"B Tech (Computer Science and Engineering)",
+          "institute":"Potti Sri Ramulu Chalavadi Mallikarjuna Rao",
+          "data":["74%","2015-2019"]
+        },
+        {
+          "degree":"Intermediate",
+          "institute":"Narayana",
+          "data":["93%","2013-2015"]
+        },
+        {
+          "degree":"SSC",
+          "institute":"L P C T G V E M H S",
+          "data":["8.8","2013"]
+        }
+      ]
+    }
+  ]
+}
