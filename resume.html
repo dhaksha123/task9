@@ -10,7 +10,7 @@
 <div class="child1">
 
 </div>
-<div class="child2">
+<div class="child6">
 
 </div>
 </div>
@@ -26,7 +26,8 @@
 
   }
   console.log(parameter);
-  function loadJSON(file,callback){
+  function loadJSON(file,callback)
+  {
     var xhr=new XMLHttpRequest();
     xhr.overrideMimeType("application/json");
     xhr.open("GET",file,true);
@@ -43,31 +44,120 @@
     var data=JSON.parse(text);
     console.log(data);
     profileData(data.profiles);
+    fun_career(data.career);
+    fun_education(data.education);
+    fun_achievements(data.achievements);
+    fun_technicalskills(data.technical);
+
 
   })
   function profileData(pro)
   {
     for (var i=0; i<pro.length; i++) {
-//      console.log(parameter[1]);
+
           if(parameter[1]==pro[i].id){
-  //        console.log("true");
-          var name=document.querySelector(".child1");
-          var name1=document.querySelector(".child2");
+
+          var div=document.querySelector(".child1");
+
+
+          var img=document.createElement("img");
+    img.src=pro[i].image;
+    div.appendChild(img);
+    var h1=document.createElement("h2");
+    h1.textContent=pro[i].name;
+    div.appendChild(h1);
+    var h3=document.createElement("h3");
+    h3.textContent=pro[i].mail;
+    div.appendChild(h3);
+    var h4=document.createElement("h4");
+    h4.textContent=pro[i].label;
+    div.appendChild(h4);
+    var h5=document.createElement("h5");
+    h5.textContent=pro[i].company;
+    div.appendChild(h5);
+
+
           var basic=pro[i].name+"<br>"+pro[i].label+"<br>"+pro[i].company;
           name.innerHTML=basic;
-          for(var j=0;j<profiles.education.length;j++){
-          var para=document.createElement("p");
-          para.textContent=pro[i].education[j].degree;
-          name1.appendChild(para);
-          var para1=document.createElement("p");
-          para1.textContent=pro[i].education[j].institute;
-          name1.appendChild(para1);
-          var para2=document.createElement("p");
-          para2.textContent=pro[i].education[j].data;
-          name1.appendChild(para2);
+
         }
         }
-        }
+  }
+  var div6=document.querySelector(".child6");
+
+
+  function fun_career(edu1)
+  {
+    var h2=document.createElement("h2");
+    h2.textContent="Career Objective";
+    div6.appendChild(h2);
+    var hr1=document.createElement("hr");
+    div6.appendChild(hr1);
+    var p=document.createElement("p");
+  p.textContent=edu1.info;
+  div6.appendChild(p);
+  }
+
+  function fun_education(edu)
+  {
+    var abc=document.createElement("h2");
+    abc.textContent="Educational Qualification";
+    div6.appendChild(abc);
+    var hr=document.createElement("hr");
+    div6.appendChild(hr);
+
+    var list=document.createElement("ul");
+    div6.appendChild(list);
+      for(var i=0;i<edu.length;i++)
+    {
+      var listItem=document.createElement("li");
+      listItem.textContent=edu[i].degree;
+        list.appendChild(listItem);
+        var listItem1=document.createElement("p");
+        listItem1.textContent=edu[i].institute;
+        list.appendChild(listItem1);
+        var listItem2=document.createElement("p");
+        listItem2.textContent=edu[i].data;
+        list.appendChild(listItem2);
+
+    }
+  }
+  function fun_achievements(ach)
+  {
+    var he=document.createElement("h2");
+    he.textContent="Achievements";
+    div6.appendChild(he);
+    var hr=document.createElement("hr");
+    div6.appendChild(hr);
+    var list=document.createElement("ul");
+    div6.appendChild(list);
+    for(var i=0;i<ach.length;i++)
+    {
+    var listItem3=document.createElement("li");
+    listItem3.innerHTML=ach[i].name;
+    list.appendChild(listItem3);
+
+  }
+  }
+  function fun_technicalskills(tech)
+  {
+    var he=document.createElement("h2");
+    he.textContent="Technical Skills";
+    div6.appendChild(he);
+    var hr=document.createElement("hr");
+    div6.appendChild(hr);
+  var tr="";
+  var table=document.createElement("table");
+  div6.appendChild(table);
+  for(var i=0;i<tech.length;i++)
+  {
+
+    tr+="<tr><td>"+tech[i].name+"</td><td>"+tech[i].data+"</td></tr>";
+
+
+  }
+    table.innerHTML=tr;
+    table.border="2";
   }
 
   </script>

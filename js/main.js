@@ -33,7 +33,7 @@ function profileData(pro){
     name.textContent=pro[i].name;
     var label=document.createElement("h3");
     label.textContent=pro[i].label;
-    var company=document.createElement("h3");
+    var company=document.createElement("h4");
     company.textContent=pro[i].company;
     subDiv.appendChild(name);
     subDiv.appendChild(label);
