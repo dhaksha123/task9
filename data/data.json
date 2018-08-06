@@ -2,36 +2,30 @@
   "profiles":[
     {
       "id":1,
-      "name":"Samba",
-      "label":"DBA",
+      "name":"Dhakshayani",
+      "label":"Fresher",
       "company":"Infosys",
-      "image":"img/image1.png"
+      "image":"img/profile.jpg"
 
     },
     {
       "id":2,
-      "name":"Sai Harsha",
-      "label":"Front end",
+      "name":"Haritha",
+      "label":"Fresher",
       "company":"Polaris",
-      "image":"img/image1.png"
+      "image":"img/profile.jpg"
 
     },
     {
       "id":3,
-      "name":"Mouni Sameera",
-      "label":"Tech-lead",
-      "company":"CA",
-      "image":"img/image1.png"
+      "name":"Haritha",
+      "label":"Fresher",
+      "company":"Polaris",
+      "image":"img/profile.jpg"
 
     },
-    {
-      "id":4,
-      "name":"pavani Nikitha",
-      "label":"Developer",
-      "company":"IBM",
-      "image":"img/image1.png"
 
-    }
+
   ],
   "career":{
     "info":"To pursue a challenging career and be a part of progressive organization that gives a scope to enhance my knowledge and utilizing my skills towards the growth of the organization."
